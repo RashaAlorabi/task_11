@@ -6,8 +6,8 @@ from django.http import HttpResponse
 
 
 def no_access(request):
-    return ttpResponse(" <h1>You have no access!</h1>")
-
+   
+    return render(request, 'access.html')
 
 def signup(request):
     form = SignupForm()
